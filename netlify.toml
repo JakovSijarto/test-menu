@@ -4,6 +4,14 @@
   functions = "functions"
   publish = "public"
 
+# Ensure API routes are handled by Netlify Functions
+[[redirects]]
+  from = "/.netlify/functions/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  force = true
+
+# Catch-all redirect for frontend routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
