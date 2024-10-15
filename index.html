@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Menu Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu Editor</h1>
+        <div id="menu-container">
+            <ul id="menu-list"></ul>
+        </div>
+        <h2>Add New Menu Item</h2>
+        <form id="add-menu-form">
+            <input type="text" id="menu-item-input" placeholder="Enter menu item" required>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Edit Menu Item</h2>
+            <form id="edit-menu-form">
+                <input type="text" id="edit-menu-input" required>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="firebaseConfig.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
