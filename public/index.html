@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Restaurant Menu</h1>
+    <div id="menu-container"></div>
+
+    <h2>Manage Menu</h2>
+    <form id="menu-form">
+        <fieldset>
+            <legend>Action</legend>
+            <label>
+                <input type="radio" name="action" value="add" checked> Add
+            </label>
+            <label>
+                <input type="radio" name="action" value="update"> Update
+            </label>
+            <label>
+                <input type="radio" name="action" value="delete"> Delete
+            </label>
+        </fieldset>
+
+        <label for="category">Category:</label>
+        <select id="category" required>
+            <option value="" disabled selected>Select Category</option>
+        </select>
+
+        <div id="item-fields">
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description"></textarea>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" step="0.01" min="0">
+
+            <label for="available">Available:</label>
+            <select id="available">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

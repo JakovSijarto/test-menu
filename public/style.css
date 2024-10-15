@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#menu-container {
+    margin-bottom: 40px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category h3 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+.item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item.available {
+    background-color: #e8f5e9;
+}
+
+.item.unavailable {
+    background-color: #ffebee;
+}
+
+.item h4 {
+    margin: 0;
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
